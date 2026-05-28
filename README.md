@@ -33,6 +33,7 @@ Before writing, claim the algorithm you want to document:
 | Heap | @BemnetMussa | Done |
 | Union-Find | @BemnetMussa | Done |
 | Bitwise | @BemnetMussa | Done |
+| Backtracking | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
