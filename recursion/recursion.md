@@ -149,5 +149,6 @@ def fib(n, memo=None):
 At first, I thought recursion was only about calling the same function again, but I learned the critical part is designing the base case and guaranteeing progress toward it.
 
 ## See also
-- [Depth-First Search (DFS)](../graph/dfs.md)
-- [Prefix Sum](../prefix-sum/prefix-sum.md)
+- [Depth-First Search (DFS)](../graph/dfs.md) – DFS is recursion applied to graph traversal.
+- [Backtracking](../backtracking/backtracking.md) – backtracking is recursion with an undo step.
+- [Dynamic Programming](../dynamic-programming/dynamic-programming.md) – memoized recursion is top-down DP.

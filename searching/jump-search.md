@@ -102,5 +102,3 @@ If the block size is too small (e.g., 2), you make many jumps – almost like li
 ## See also
 - [Binary Search](../searching/binary-search.md) – faster but requires mid‑index calculation.
 - [Exponential Search](../searching/exponential-search.md) – also uses a two‑phase approach (range finding + binary search).
-
-Ready to tackle **sorting algorithms** (e.g., Quick Sort, Merge Sort) or **data structures** (e.g., Hash Table, Trie) next? Just say the word.

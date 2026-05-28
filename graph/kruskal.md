@@ -27,6 +27,9 @@ Kruskal's algorithm finds a Minimum Spanning Tree (MST) by repeatedly adding the
 ## Templates (Python)
 
 ### Kruskal with Union‑Find (Disjoint Set Union)
+Use when: finding the minimum spanning tree of a weighted undirected graph.
+Input: `n` — number of vertices (0-indexed); `edges` — list of `(weight, u, v)`.
+Output: tuple of `(total_weight, mst_edges)`.
 ```python
 class DSU:
     def __init__(self, n):
@@ -71,6 +74,9 @@ def kruskal(n, edges):
 ```
 
 ### Example usage
+Use when: verifying your implementation with a small concrete graph.
+Input: hardcoded edge list.
+Output: printed MST weight and edges.
 ```python
 edges = [
     (1, 0, 1), (3, 0, 2), (2, 1, 2), (4, 1, 3), (5, 2, 3)
@@ -110,6 +116,6 @@ print(mst)    # [(0,1,1), (1,2,2), (1,3,4)]
 I thought any greedy approach would fail for MST. But Kruskal works because of the cut property: the smallest edge crossing any cut belongs to some MST. Sorting edges and adding them if they connect different components respects this property globally.
 
 ## See also
-- [Prim's Algorithm](../graph/prims.md) – another MST algorithm (different approach).
-- [Union‑Find (Disjoint Set)](../union-find/union-find.md) – essential for Kruskal.
-- [Minimum Spanning Tree concepts](../graph/mst.md).
+- [Union‑Find (Disjoint Set)](../union-find/union-find.md) – essential data structure used by Kruskal.
+- [Dijkstra's Algorithm](./dijkstra.md) – related greedy approach for shortest paths.
+- [DFS](./dfs.md) – can also detect cycles used in MST validation.

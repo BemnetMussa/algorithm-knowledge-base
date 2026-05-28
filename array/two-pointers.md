@@ -39,6 +39,9 @@ There are several common patterns:
 ## Templates (Python)
 
 ### Opposing pointers – pair sum in sorted array (find if exists)
+Use when: checking if any two elements in a sorted array sum to a target.
+Input: `nums` — sorted list of integers; `target` — desired sum.
+Output: `True` if a valid pair exists, `False` otherwise.
 ```python
 def has_pair_sum(nums, target):
     left, right = 0, len(nums) - 1
@@ -54,6 +57,9 @@ def has_pair_sum(nums, target):
 ```
 
 ### Opposing pointers – reverse array in‑place
+Use when: reversing an array or string without extra space.
+Input: `arr` — list of elements.
+Output: `arr` reversed in place (no return value).
 ```python
 def reverse_array(arr):
     left, right = 0, len(arr) - 1
@@ -64,6 +70,9 @@ def reverse_array(arr):
 ```
 
 ### Fast & slow pointers – find middle of linked list
+Use when: finding the middle node of a linked list in one pass.
+Input: `head` — head node of a linked list.
+Output: the middle node (or second middle if even length).
 ```python
 def find_middle(head):
     slow = fast = head
@@ -74,6 +83,9 @@ def find_middle(head):
 ```
 
 ### Pointers scanning left – remove duplicates in‑place (sorted array)
+Use when: compacting a sorted array to keep only unique values, in place.
+Input: `nums` — sorted list of integers (modified in place).
+Output: new length after removing duplicates.
 ```python
 def remove_duplicates(nums):
     if not nums:

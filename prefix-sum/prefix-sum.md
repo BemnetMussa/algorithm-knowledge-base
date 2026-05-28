@@ -121,5 +121,5 @@ def apply_range_updates(n, updates):
 At first, I mixed up when to use normal prefix sums vs prefix-plus-hash-map; I learned hash-map frequency is needed when counting subarrays, not just querying sums.
 
 ## See also
-- [Sliding Window](../sliding-window/sliding-window.md)
-- [Topological Sort](../graph/topological-sort.md)
+- [Sliding Window](../sliding-window/sliding-window.md) – both solve subarray problems; sliding window avoids the need to precompute.
+- [Two Pointers](../array/two-pointers.md) – often combined with prefix sums for range queries.

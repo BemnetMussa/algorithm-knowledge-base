@@ -25,14 +25,13 @@ Dijkstra's algorithm finds the shortest path from a starting node to all other n
 ## Templates (Python)
 
 ### Dijkstra using `heapq` (priority queue)
+Use when: finding shortest distances from one source to all other nodes.
+Input: `graph` — dict where `graph[node] = [(neighbor, weight), ...]`; `start` — source node.
+Output: dict of shortest distances from `start` to every node.
 ```python
 import heapq
 
 def dijkstra(graph, start):
-    """
-    graph: dict where graph[node] = [(neighbor, weight), ...]
-    returns: dict of shortest distances from start to every node
-    """
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
     pq = [(0, start)]  # (distance, node)
@@ -54,7 +53,12 @@ def dijkstra(graph, start):
 ```
 
 ### Dijkstra to find shortest path to a single target (early stop)
+Use when: you only need the distance to one specific target node.
+Input: `graph` — same format as above; `start`, `target` — source and destination nodes.
+Output: shortest distance to `target`, or `-1` if unreachable.
 ```python
+import heapq
+
 def dijkstra_target(graph, start, target):
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
@@ -79,6 +83,9 @@ def dijkstra_target(graph, start, target):
 ```
 
 ### Example graph representation
+Use when: testing or visualizing how the graph input is structured.
+Input: hardcoded graph dict.
+Output: printed shortest distances.
 ```python
 graph = {
     'A': [('B', 4), ('C', 2)],
@@ -122,8 +129,7 @@ print(dist)  # {'A': 0, 'B': 4, 'C': 2, 'D': 7, 'E': 9}
 I used to think Dijkstra could be implemented with a simple queue (like BFS). But BFS works only for unit weights. With variable weights, you must always pick the node with the smallest current distance; that’s why a priority queue is essential. I learned the hard way when my simple queue gave wrong distances for a graph with weights 1 and 10.
 
 ## See also
-- [Bellman‑Ford Algorithm](../graph/bellman-ford.md) – handles negative edges (slower).
-- [A* Search](../graph/a-star.md) – heuristic‑guided Dijkstra.
-- [Prim's MST](../graph/prims.md) – similar greedy algorithm for minimum spanning trees.
+- [BFS](./bfs.md) – shortest path on unweighted graphs.
+- [Kruskal's Algorithm](./kruskal.md) – minimum spanning tree using a greedy approach.
+- [Union‑Find](../union-find/union-find.md) – used by Kruskal, related greedy graph algorithm.
 
-Want me to also create **Bellman‑Ford** (handles negative weights) or **Floyd‑Warshall** (all‑pairs) next? Or move to **Dynamic Programming** (0/1 knapsack)? Your call.

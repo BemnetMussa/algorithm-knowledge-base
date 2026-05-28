@@ -177,5 +177,6 @@ def merge_k_sorted_lists(lists):
 At first, I expected heaps to return fully sorted output directly, but I learned a heap guarantees order only at the root (global min/max), not between all siblings/subtrees.
 
 ## See also
-- [Prefix Sum](../prefix-sum/prefix-sum.md)
-- [Topological Sort](../graph/topological-sort.md)
+- [Dijkstra's Algorithm](../graph/dijkstra.md) – uses a min-heap as its priority queue.
+- [Union-Find](../union-find/union-find.md) – another data structure used in graph algorithms.
+- [Topological Sort](../graph/topological-sort.md) – Kahn's algorithm also uses a queue structure.

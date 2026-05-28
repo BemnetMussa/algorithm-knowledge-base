@@ -17,6 +17,9 @@ Topological Sort gives a linear ordering of nodes in a Directed Acyclic Graph (D
 
 ## Templates (Python)
 ### 1) Kahn's Algorithm (BFS + indegree)
+Use when: you need topological order and also want to detect cycles easily.
+Input: `n` — number of nodes (0-indexed); `edges` — list of `(u, v)` directed pairs.
+Output: topological order as a list, or empty list if a cycle exists.
 ```python
 from collections import deque
 
@@ -46,6 +49,9 @@ def topological_sort_kahn(n, edges):
 ```
 
 ### 2) Modified DFS (postorder + cycle detection)
+Use when: you're already using DFS elsewhere or prefer a recursive approach.
+Input: `n` — number of nodes; `edges` — list of `(u, v)` directed pairs.
+Output: topological order as a list, or empty list if a cycle exists.
 ```python
 def topological_sort_dfs(n, edges):
     graph = [[] for _ in range(n)]

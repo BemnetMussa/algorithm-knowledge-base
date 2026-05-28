@@ -20,6 +20,9 @@ BFS explores a graph level by level from a start node, visiting all nearest node
 
 ## Templates (Python)
 ### 1) Standard BFS (graph traversal)
+Use when: visiting all reachable nodes or finding traversal order.
+Input: `graph` — adjacency dict; `start` — starting node.
+Output: list of visited nodes in BFS order.
 ```python
 from collections import deque
 
@@ -42,6 +45,9 @@ def bfs(graph, start):
 ```
 
 ### 2) Multi-source BFS (all sources start together)
+Use when: multiple starting nodes all at distance 0 (e.g., 01-Matrix, rotting oranges).
+Input: `graph` — adjacency dict; `sources` — list of starting nodes.
+Output: dict mapping each reachable node to its distance from the nearest source.
 ```python
 from collections import deque
 
@@ -65,6 +71,9 @@ def multi_source_bfs(graph, sources):
 ```
 
 ### 3) Level-order BFS (process nodes by layers)
+Use when: you need to process or record nodes grouped by their depth/level.
+Input: `graph` — adjacency dict; `start` — starting node.
+Output: list of lists, where each inner list contains nodes at one level.
 ```python
 from collections import deque
 
@@ -92,6 +101,9 @@ def bfs_levels(graph, start):
 ```
 
 ### 4) Bidirectional BFS (shortest path between two nodes)
+Use when: finding shortest path between two specific nodes and the graph is large (reduces search space).
+Input: `graph` — adjacency dict; `start`, `target` — endpoints.
+Output: shortest path length, or `-1` if unreachable.
 ```python
 from collections import deque
 
@@ -152,4 +164,5 @@ At first, I mixed up BFS and DFS because both visit all nodes; BFS is the one th
 
 ## See also
 - [Depth-First Search (DFS)](./dfs.md)
-- [Shortest Path (Unweighted Graph)](./shortest-path-unweighted.md)
+- [Dijkstra's Algorithm](./dijkstra.md) – BFS generalised to weighted graphs.
+- [Topological Sort](./topological-sort.md) – also uses a queue (Kahn's algorithm).

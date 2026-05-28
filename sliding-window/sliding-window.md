@@ -41,11 +41,13 @@ Step 4:  2  1  5 [1, 3, 2]  → sum = 6  (−5, +2)
 Maximum sum = 9
 ```
 
-## Code example (Python)
+## Templates (Python)
 
+### Fixed-size window — maximum sum subarray of size k
+Use when: window size is constant and you need the best result over all windows.
+Input: `arr` — list of integers; `k` — window size.
+Output: maximum subarray sum of length `k`, or `-1` if `len(arr) < k`.
 ```python
-# --- Fixed-size window: maximum sum subarray of size k ---
-
 def max_sum_subarray(arr: list[int], k: int) -> int:
     n = len(arr)
     if n < k:
@@ -61,10 +63,13 @@ def max_sum_subarray(arr: list[int], k: int) -> int:
         max_sum = max(max_sum, window_sum)
 
     return max_sum
+```
 
-
-# --- Variable-size window: longest subarray with sum <= target ---
-
+### Variable-size window — longest subarray with sum ≤ target
+Use when: window size varies and you shrink from the left when a constraint is violated.
+Input: `arr` — list of non-negative integers; `target` — maximum allowed sum.
+Output: length of the longest valid subarray.
+```python
 def longest_subarray_with_sum(arr: list[int], target: int) -> int:
     left = 0
     current_sum = 0
@@ -80,11 +85,6 @@ def longest_subarray_with_sum(arr: list[int], target: int) -> int:
         max_length = max(max_length, right - left + 1)
 
     return max_length
-
-
-# Quick tests
-print(max_sum_subarray([2, 1, 5, 1, 3, 2], 3))   # → 9
-print(longest_subarray_with_sum([1, 2, 3, 4, 5], 9))  # → 3  ([2,3,4] or [1,3,5]... actually [1,2,3,4]=10 no → [2,3,4]=9 ✓)
 ```
 
 ## Time & space complexity (Big O)
@@ -117,5 +117,5 @@ Brute-force comparison: a nested loop checking all subarrays is O(n²) or O(n³)
 The variable-size window's time complexity looks like O(n²) because of the inner `while` loop, but it is actually O(n). Each element is added to the window exactly once (when `right` passes over it) and removed at most once (when `left` passes over it), so the total number of operations across the entire loop is 2n, which is O(n).
 
 ## See also
-- [Two Pointers](../two-pointers/two-pointers.md)
+- [Two Pointers](../array/two-pointers.md)
 - [Prefix Sum](../prefix-sum/prefix-sum.md)

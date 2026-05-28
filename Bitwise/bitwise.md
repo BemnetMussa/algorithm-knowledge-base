@@ -124,7 +124,6 @@ At first, I did not understand why `~` in Python gives negative numbers (`~5 = -
 It is because Python uses **infinite‑bit two’s complement**. Flipping all bits of `...101` (5) gives `...010` which is -6 in two’s complement. For bit masking we often ignore this and use `&` with a finite mask (e.g., `~mask & 0xFF` for 8 bits).
 
 ## See also
-- [Bitmask subsets approach](../backtracking/subsets.md) (if available)
-- [XOR tricks for missing numbers](../bit-manipulation/xor-tricks.md)
-- Python `int.bit_count()` (Python 3.8+), `bin()`, `int.from_bytes()`
-```
+- [Backtracking](../backtracking/backtracking.md) – bitmasks are a common way to enumerate subsets in backtracking.
+- [Dynamic Programming](../dynamic-programming/dynamic-programming.md) – bitmask DP uses bit manipulation to encode state.
+- Python built-ins: `bin()`, `int.bit_count()` (Python 3.10+), `int.from_bytes()`

@@ -28,7 +28,10 @@ Merge Sort is a divide‑and‑conquer sorting algorithm that splits an array in
 
 ## Templates (Python)
 
-### Classic merge sort (in‑place merging into a temporary array)
+### Classic merge sort (returns a new sorted array)
+Use when: you want clean, readable code and don't mind O(n) extra memory.
+Input: `arr` — list of comparable elements.
+Output: new sorted list.
 ```python
 def merge_sort(arr):
     if len(arr) <= 1:
@@ -58,7 +61,10 @@ def merge(left, right):
     return result
 ```
 
-### In‑place merge sort (saves memory, uses helper array)
+### In‑place merge sort (sorts the input array directly)
+Use when: you want to sort without creating a new list (modifies `arr` in place).
+Input: `arr` — list of comparable elements; `left`, `right` — index bounds (omit for full sort).
+Output: `arr` sorted in place (no return value).
 ```python
 def merge_sort_inplace(arr, left=0, right=None):
     if right is None:
@@ -129,4 +135,3 @@ Trying to do in‑place merging without extra space is very complex (e.g., block
 ## See also
 - [Quick Sort](../sorting/quick-sort.md) – another divide‑and‑conquer sorting algorithm (unstable, in‑place, with average O(n log n) but worst O(n²)).
 - [Recursion](../recursion/recursion.md) – merge sort is a perfect recursive example.
-``

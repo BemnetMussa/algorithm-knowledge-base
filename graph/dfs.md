@@ -19,6 +19,9 @@ DFS explores a graph by going as deep as possible along each branch before backt
 
 ## Templates (Python)
 ### 1) Recursive DFS (graph traversal)
+Use when: traversing all reachable nodes with simple recursive code.
+Input: `graph` — adjacency dict; `node` — current node; `visited` — set; `order` — result list.
+Output: fills `order` with nodes in DFS visit order.
 ```python
 def dfs_recursive(graph, node, visited, order):
     visited.add(node)
@@ -31,6 +34,9 @@ def dfs_recursive(graph, node, visited, order):
 ```
 
 ### 2) Iterative DFS (stack)
+Use when: the graph may be very deep and you want to avoid Python's recursion limit.
+Input: `graph` — adjacency dict; `start` — starting node.
+Output: list of visited nodes in DFS order.
 ```python
 def dfs_iterative(graph, start):
     visited = set()
@@ -54,6 +60,9 @@ def dfs_iterative(graph, start):
 ```
 
 ### 3) DFS coloring (white/gray/black)
+Use when: detecting cycles in a directed graph.
+Input: `graph` — adjacency dict.
+Output: `True` if a cycle exists, `False` otherwise.
 ```python
 def has_cycle_directed(graph):
     color = {}  # 0=unvisited, 1=visiting, 2=done
@@ -76,6 +85,9 @@ def has_cycle_directed(graph):
 ```
 
 ### 4) DFS cycle detection (undirected graph)
+Use when: detecting cycles in an undirected graph.
+Input: `graph` — adjacency dict.
+Output: `True` if a cycle exists, `False` otherwise.
 ```python
 def has_cycle_undirected(graph):
     visited = set()

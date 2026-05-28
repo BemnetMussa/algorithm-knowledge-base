@@ -135,3 +135,8 @@ class TrieArray:
 ## One thing that was confusing to me
 I initially thought the root node could hold a character. But the root is empty – it just points to the first letters of all words. That took me a while to accept. Also, the distinction between search (needs `is_end = True`) and startsWith (just path existence) is subtle but critical.
 
+## See also
+- [DFS](../graph/dfs.md) – Trie traversal is essentially DFS on a tree.
+- [Backtracking](../backtracking/backtracking.md) – Trie + DFS is used for Word Search II.
+- [Recursion](../recursion/recursion.md) – recursive insert/search is a natural fit for Tries.
+
