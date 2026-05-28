@@ -8,39 +8,45 @@ This repository is a student-powered knowledge base for the A2SV Software Engine
 
 ## How to Contribute
 
-Before you start, please read:
-- [CONTRIBUTING.md](./CONTRIBUTING.md)
-- [AGENTS.md](./AGENTS.md)
+Before you start, please read [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ### 1) Claim an Algorithm First (avoid duplicates)
 
 Before writing, claim the algorithm you want to document:
 
 - **Option A:** Open a GitHub Issue titled `Claim: <Algorithm Name>`
-- **Option B:** Add your name to a claim table in this README (example below)
+- **Option B:** Add your name to the claim table below
 
 | Algorithm | Claimed by | Status |
 | --- | --- | --- |
-| Binary Search | @student-username | In progress |
-| Bubble Sort | @another-student | Done |
+| Binary Search | @BemnetMussa | Done |
+| Jump Search | @BemnetMussa | Done |
+| Exponential Search | @BemnetMussa | Done |
+| Merge Sort | @BemnetMussa | Done |
+| Quick Sort | @BemnetMussa | Done |
+| Two Pointers | @BemnetMussa | Done |
 | Sliding Window | @Amanuel-Merara | Done |
-| Depth First Search | @BemnetMussa| Done |
-| Breadth First Search | @BemnetMussa | Done |
-| Topological Sort | @BemnetMussa | Done |
 | Prefix Sum | @BemnetMussa | Done |
 | Linked List | @BemnetMussa | Done |
 | Recursion | @BemnetMussa | Done |
-| Heap | @BemnetMussa | Done |
-| Union-Find | @BemnetMussa | Done |
-| Bitwise | @BemnetMussa | Done |
 | Backtracking | @BemnetMussa | Done |
+| Depth First Search | @BemnetMussa | Done |
+| Breadth First Search | @BemnetMussa | Done |
+| Topological Sort | @BemnetMussa | Done |
+| Dijkstra's Algorithm | @BemnetMussa | Done |
+| Kruskal's Algorithm | @BemnetMussa | Done |
+| Heap | @BemnetMussa | Done |
+| Trie | @BemnetMussa | Done |
+| Union-Find | @BemnetMussa | Done |
+| Dynamic Programming | @BemnetMussa | Done |
+| Bitwise Operations | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
 Add your note in the appropriate category folder. Example path:
 
 ```text
-/sorting/bubble-sort.md
+sorting/bubble-sort.md
 ```
 
 Use lowercase and hyphens for file names.
@@ -80,6 +86,8 @@ Copy this template into your algorithm file:
 
 ## Templates (<Choose one: Python / Java / C++ >)
 <You can include multiple templates when relevant, for example: standard, iterative/recursive, or problem-specific variants.>
+
+### <Template name>
 Use when: <When this exact template is useful>
 Input: <Function inputs>
 Output: <What the function returns>
@@ -118,36 +126,38 @@ Output: <What the function returns>
 - [<Related Algorithm 2>](../<path-to-related-file>.md)
 ````
 
-## Suggested Folder Structure
+## Folder Structure
 
-You can organize notes like this:
+Organize notes inside the matching topic folder. Current folders in this repo:
 
 ```text
-sorting/
-searching/
-graph/
-linked-list/
-recursion/
-heap/
-union-find/
-dynamic-programming/
-data-structures/
-greedy/
+array/              ← two pointers and array techniques
 backtracking/
-bit-manipulation/
+Bitwise/
+dynamic-programming/
+graph/              ← BFS, DFS, Dijkstra, Kruskal, Topological Sort
+heap/
+linked-list/
+prefix-sum/
+recursion/
+searching/          ← Binary Search, Jump Search, Exponential Search
+sliding-window/
+sorting/            ← Merge Sort, Quick Sort
+trie/
+union-find/
 ```
 
 Example full paths:
 
-- `sorting/bubble-sort.md`
+- `sorting/merge-sort.md`
 - `searching/binary-search.md`
 - `graph/bfs.md`
 - `linked-list/singly-linked-list.md`
 - `recursion/recursion.md`
 - `heap/heap.md`
 - `union-find/union-find.md`
-- `dynamic-programming/knapsack.md`
-- `data-structures/stack.md`
+- `dynamic-programming/dynamic-programming.md`
+- `backtracking/backtracking.md`
 
 ## Quality Guidelines
 
@@ -182,6 +192,11 @@ Binary Search finds a target value in a sorted list by repeatedly checking the m
 4. Repeat until found or until `left` passes `right` (not found).
 
 ## Templates (Python)
+
+### Iterative binary search
+Use when: searching for an exact match in a sorted array.
+Input: `nums` — sorted list of integers; `target` — value to find.
+Output: index of `target`, or `-1` if not found.
 ```python
 def binary_search(nums, target):
     left, right = 0, len(nums) - 1
@@ -226,8 +241,8 @@ def binary_search(nums, target):
 At first, I was confused about why the loop condition is `left <= right` and not `left < right`; I learned that `<=` is needed so single-element ranges are still checked.
 
 ## See also
-- [Linear Search](../searching/linear-search.md)
 - [Jump Search](../searching/jump-search.md)
+- [Two Pointers](../array/two-pointers.md)
 ````
 
 ## FAQ
