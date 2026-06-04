@@ -8,6 +8,8 @@ This repository is a student-powered knowledge base for the A2SV Software Engine
 
 ## How to Contribute
 
+
+
 Before you start, please read [CONTRIBUTING.md](./CONTRIBUTING.md) and check the [ROADMAP.md](./ROADMAP.md) to see the suggested study order and which topics still need notes.
 
 ### 1) Claim an Algorithm First (avoid duplicates)
