@@ -7,6 +7,8 @@ This repository is a student-powered knowledge base for the A2SV Software Engine
 > "Shared knowledge is far greater than individual knowledge."
 
 ## How to Contribute
+soething
+
 
 Before you start, please read [CONTRIBUTING.md](./CONTRIBUTING.md) and check the [ROADMAP.md](./ROADMAP.md) to see the suggested study order and which topics still need notes.
 
