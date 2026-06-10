@@ -66,9 +66,9 @@ Notes marked **✅ In this repo** have a file you can read right now. Everything
 
 | # | Topic | In this repo | Notes |
 |---|-------|-------------|-------|
-| 23 | Binary Tree basics | — | Node structure, height, depth, leaf. |
-| 24 | Tree Traversal (Pre / In / Post-order) | — | Recursive and iterative versions. |
-| 25 | Level-order Traversal (BFS on trees) | — | Foundation for many tree problems. |
+| 23 | Binary Tree basics | ✅ [tree/binary-tree.md](./tree/binary-tree.md) | Node structure, height, depth, leaf. |
+| 24 | Tree Traversal (Pre / In / Post-order) | ✅ [tree/binary-tree.md](./tree/binary-tree.md) | Recursive and iterative versions. |
+| 25 | Level-order Traversal (BFS on trees) | ✅ [tree/binary-tree.md](./tree/binary-tree.md) | Foundation for many tree problems. |
 | 26 | Binary Search Tree (BST) | — | Insert, delete, search. Inorder = sorted. |
 | 27 | Heap / Priority Queue | ✅ [heap/heap.md](./heap/heap.md) | Min-heap, max-heap, top-k problems. |
 | 28 | Trie (Prefix Tree) | ✅ [trie/trie.md](./trie/trie.md) | Autocomplete, word search, prefix matching. |

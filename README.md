@@ -45,6 +45,7 @@ Before writing, claim the algorithm you want to document:
 | Stack | @BemnetMussa | Done |
 | Queue & Deque | @BemnetMussa | Done |
 | Hash Map & Hash Set | @BemnetMussa | Done |
+| Binary Tree & Traversal | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
