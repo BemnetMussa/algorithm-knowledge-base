@@ -43,6 +43,7 @@ Before writing, claim the algorithm you want to document:
 | Dynamic Programming | @BemnetMussa | Done |
 | Bitwise Operations | @BemnetMussa | Done |
 | Stack | @BemnetMussa | Done |
+| Queue & Deque | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
