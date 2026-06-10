@@ -42,6 +42,7 @@ Before writing, claim the algorithm you want to document:
 | Union-Find | @BemnetMussa | Done |
 | Dynamic Programming | @BemnetMussa | Done |
 | Bitwise Operations | @BemnetMussa | Done |
+| Stack | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
