@@ -44,6 +44,7 @@ Before writing, claim the algorithm you want to document:
 | Bitwise Operations | @BemnetMussa | Done |
 | Stack | @BemnetMussa | Done |
 | Queue & Deque | @BemnetMussa | Done |
+| Hash Map & Hash Set | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 

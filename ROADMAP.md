@@ -28,7 +28,7 @@ Notes marked **✅ In this repo** have a file you can read right now. Everything
 | 6 | Linked List (Doubly) | ✅ [linked-list/doubly-linked-list.md](./linked-list/doubly-linked-list.md) | Needed for LRU cache, deque problems. |
 | 7 | Stack | ✅ [stack/stack.md](./stack/stack.md) | LIFO. Used in expression parsing, undo/redo, monotonic problems. |
 | 8 | Queue & Deque | ✅ [queue/queue.md](./queue/queue.md) | FIFO. Foundation for BFS. |
-| 9 | Hash Map & Hash Set | — | Most frequent interview data structure. O(1) lookup. |
+| 9 | Hash Map & Hash Set | ✅ [hash-map/hash-map.md](./hash-map/hash-map.md) | Most frequent interview data structure. O(1) lookup. |
 
 ---
 
