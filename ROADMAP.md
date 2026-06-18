@@ -133,7 +133,7 @@ Notes marked **✅ In this repo** have a file you can read right now. Everything
 
 | # | Topic | In this repo | Notes |
 |---|-------|-------------|-------|
-| 58 | Monotonic Stack / Queue | — | Next greater element, largest rectangle, sliding window max. |
+| 58 | Monotonic Stack / Queue | ✅ [stack/monotonic-stack.md](./stack/monotonic-stack.md) | Next greater element, largest rectangle, sliding window max. |
 | 59 | Interval problems | — | Merge intervals, meeting rooms, sweep line. |
 | 60 | String algorithms (KMP, Rabin-Karp) | — | Pattern matching in O(n). |
 | 61 | Suffix Arrays & Suffix Trees | — | Advanced string problems. |

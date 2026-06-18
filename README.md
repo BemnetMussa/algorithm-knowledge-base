@@ -47,6 +47,7 @@ Before writing, claim the algorithm you want to document:
 | Hash Map & Hash Set | @BemnetMussa | Done |
 | Binary Tree & Traversal | @BemnetMussa | Done |
 | Binary Search Tree | @BemnetMussa | Done |
+| Monotonic Stack | @BemnetMussa | Done |
 
 ### 2) Create Your Note File in the Correct Folder
 
